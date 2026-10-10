@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SwagLabs Test Suite">
+
+    <test name="SwagLabs Tests">
+
+        <classes>
+
+            <class name="com.swaglabs.login.TS1"/>
+            <class name="com.swaglabs.login.TS2"/>
+
+            <class name="com.swaglabs.Product.TS1"/>
+            <class name="com.swaglabs.Product.TS2"/>
+
+            <class name="com.swaglabs.Checkout.TS1"/>
+            <class name="com.swaglabs.Checkout.TS2"/>
+            <class name="com.swaglabs.Checkout.TS3"/>
+
+        </classes>
+
+    </test>
+
+</suite>

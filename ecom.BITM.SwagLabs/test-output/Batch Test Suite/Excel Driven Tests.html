@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>TestNG:  Excel Driven Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Excel Driven Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 08 16:07:25 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>62 seconds (62863 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.swaglabs.tests.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: com.swaglabs.tests.ExcelDrivenTest<br>Parameters: TC-S-002, TS-P06, ProductPage, Smoke, Verify product can be added to cart, User is logged in and Products page is open., 1. Verify the Products title is displayed.
+2. Click Add to Cart for Sauce Labs Backpack.
+3. Observe the Cart icon., Product: Sauce Labs Backpack, Products title is displayed and the Cart badge shows 1., Not Executed, High</td>
+<td></td>
+<td>0</td>
+<td>com.swaglabs.tests.ExcelDrivenTest@707194ba</td></tr>
+<tr>
+<td title='com.swaglabs.tests.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: com.swaglabs.tests.ExcelDrivenTest<br>Parameters: TC-S-001, TS-L05, Loginpage, Smoke, Verify Username, Password and Login controls are displayed, Browser is launched., 1. Open https://www.saucedemo.com/.
+2. Observe the login form., URL: https://www.saucedemo.com/, Username field, Password field and Login button are displayed., Not Executed, High</td>
+<td></td>
+<td>0</td>
+<td>com.swaglabs.tests.ExcelDrivenTest@707194ba</td></tr>
+<tr>
+<td title='com.swaglabs.tests.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: com.swaglabs.tests.ExcelDrivenTest<br>Parameters: TC-SYS-002, TS-C03, ProductPage, System, Verify add, remove and continue shopping flow, Browser is launched and Login page is open., 1. Login with valid credentials.
+2. Add Sauce Labs Backpack to cart and open the Cart.
+3. Click Remove.
+4. Verify the cart is empty.
+5. Click Continue Shopping., Username: standard_user
+Password: secret_sauce
+Product: Sauce Labs Backpack, Product is removed, the cart shows no items, and the user returns to the Products page., Not Executed, Medium</td>
+<td></td>
+<td>2</td>
+<td>com.swaglabs.tests.ExcelDrivenTest@707194ba</td></tr>
+<tr>
+<td title='com.swaglabs.tests.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: com.swaglabs.tests.ExcelDrivenTest<br>Parameters: TC-SYS-001, TS-CH09, Checkoutpage, System, Verify complete purchase flow from login to order confirmation, Browser is launched and Login page is open., 1. Login with valid credentials.
+2. Add Sauce Labs Backpack to cart.
+3. Open the Cart and click Checkout.
+4. Enter First Name, Last Name and Postal Code and click Continue.
+5. On Checkout Overview click Finish.
+6. Observe the Checkout Complete page., Username: standard_user
+Password: secret_sauce
+First Name: Suhana
+Last Name: Test
+Postal Code: 583101, Checkout: Complete! page is displayed with the message 'Thank you for your order!'., Not Executed, High</td>
+<td></td>
+<td>0</td>
+<td>com.swaglabs.tests.ExcelDrivenTest@707194ba</td></tr>
+<tr>
+<td title='com.swaglabs.tests.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: com.swaglabs.tests.ExcelDrivenTest<br>Parameters: TC-N-001, TS-L03, Loginpage, Negative, Verify login with invalid username and password, Login page is open., 1. Enter an invalid username.
+2. Enter an invalid password.
+3. Click Login., Username: invalid_user
+Password: invalid_password, Login is rejected, the error 'Username and password do not match any user in this service' is displayed and the user stays on the Login page., Not Executed, High</td>
+<td></td>
+<td>0</td>
+<td>com.swaglabs.tests.ExcelDrivenTest@707194ba</td></tr>
+<tr>
+<td title='com.swaglabs.tests.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: com.swaglabs.tests.ExcelDrivenTest<br>Parameters: TC-N-003, TS-CH07, Checkoutpage, Negative, Verify checkout is blocked when First Name is blank, User is logged in, a product is in the cart and Checkout Information page is open., 1. Leave First Name blank.
+2. Enter Last Name.
+3. Enter Postal Code.
+4. Click Continue., First Name: blank
+Last Name: Test
+Postal Code: 583101, Error 'First Name is required' is displayed and the user stays on Checkout Information page., Not Executed, High</td>
+<td></td>
+<td>0</td>
+<td>com.swaglabs.tests.ExcelDrivenTest@707194ba</td></tr>
+<tr>
+<td title='com.swaglabs.tests.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: com.swaglabs.tests.ExcelDrivenTest<br>Parameters: TC-F-002, TS-CH02, Checkoutpage, Functional, Verify valid checkout information is accepted, User is logged in, a product is in the cart and Checkout Information page is open., 1. Enter First Name.
+2. Enter Last Name.
+3. Enter Postal Code.
+4. Click Continue., First Name: Suhana
+Last Name: Test
+Postal Code: 583101, Checkout Overview page (checkout-step-two.html) is displayed., Not Executed, High</td>
+<td></td>
+<td>0</td>
+<td>com.swaglabs.tests.ExcelDrivenTest@707194ba</td></tr>
+<tr>
+<td title='com.swaglabs.tests.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: com.swaglabs.tests.ExcelDrivenTest<br>Parameters: TC-I-001, TS-P04, ProductPage, Integration, Verify Product page to Cart page using Cart icon, User is logged in and one product has been added to the cart., 1. Click the Cart icon.
+2. Observe the Cart page., Product: Sauce Labs Backpack, Cart page (cart.html) opens and Sauce Labs Backpack is listed., Not Executed, High</td>
+<td></td>
+<td>0</td>
+<td>com.swaglabs.tests.ExcelDrivenTest@707194ba</td></tr>
+<tr>
+<td title='com.swaglabs.tests.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: com.swaglabs.tests.ExcelDrivenTest<br>Parameters: TC-N-002, TS-P05, ProductPage, Negative, Verify empty cart state when no product is added, User is logged in and no product has been added., 1. Observe the Cart icon.
+2. Click the Cart icon.
+3. Observe the Cart page., Cart quantity: 0, No Cart badge is shown, and the Cart page opens with no product listed., Not Executed, Medium</td>
+<td></td>
+<td>4</td>
+<td>com.swaglabs.tests.ExcelDrivenTest@707194ba</td></tr>
+<tr>
+<td title='com.swaglabs.tests.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: com.swaglabs.tests.ExcelDrivenTest<br>Parameters: TC-I-002, TS-CH03, Checkoutpage, Integration, Verify Cart to Checkout Information to Checkout Overview flow, User is logged in and one product is in the cart., 1. Click Checkout on the Cart page.
+2. Enter valid First Name, Last Name and Postal Code.
+3. Click Continue.
+4. Observe the Checkout Overview page., First Name: Suhana
+Last Name: Test
+Postal Code: 583101, Checkout Information opens first, then Checkout Overview opens and shows the selected product., Not Executed, High</td>
+<td></td>
+<td>0</td>
+<td>com.swaglabs.tests.ExcelDrivenTest@707194ba</td></tr>
+</table><p>
+</body>
+</html>

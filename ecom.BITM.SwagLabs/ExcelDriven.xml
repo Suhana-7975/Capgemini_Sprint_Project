@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Excel Driven Suite">
+
+    <test name="Excel Driven Tests">
+        <classes>
+            <class name="com.swaglabs.tests.ExcelDrivenTest"/>
+        </classes>
+    </test>
+
+</suite>

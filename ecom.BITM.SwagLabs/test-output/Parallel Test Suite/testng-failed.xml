@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Failed suite [Parallel Test Suite]">
+  <test thread-count="3" parallel="classes" name="Parallel Tests(failed)">
+    <classes>
+      <class name="com.swaglabs.login.TS2">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyInvalidLogin"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.swaglabs.login.TS2 -->
+      <class name="com.swaglabs.Product.TS2">
+        <methods>
+          <include name="verifyCheckoutOverview"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.swaglabs.Product.TS2 -->
+      <class name="com.swaglabs.Checkout.TS3">
+        <methods>
+          <include name="verifyOrderCompletion"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.swaglabs.Checkout.TS3 -->
+      <class name="com.swaglabs.Checkout.TS1">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyCheckoutInformationPage"/>
+        </methods>
+      </class> <!-- com.swaglabs.Checkout.TS1 -->
+    </classes>
+  </test> <!-- Parallel Tests(failed) -->
+</suite> <!-- Failed suite [Parallel Test Suite] -->
