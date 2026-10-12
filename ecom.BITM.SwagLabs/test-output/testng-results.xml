@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="8" passed="2" failed="0" skipped="0">
+<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-09T14:52:15 IST" name="Suite" finished-at="2026-10-09T14:52:27 IST" duration-ms="11761">
+  <suite started-at="2026-10-10T12:48:38 IST" name="Suite" finished-at="2026-10-10T12:49:05 IST" duration-ms="27470">
     <groups>
-      <group name="NT">
-        <method signature="InvalidLoginTest.verifyInvalidLogin()[pri:1, instance:com.swaglabs.login.InvalidLoginTest@3eb738bb]" name="verifyInvalidLogin" class="com.swaglabs.login.InvalidLoginTest"/>
-        <method signature="LockedOutUserLoginTest.verifyLockedOutUserLogin()[pri:2, instance:com.swaglabs.login.LockedOutUserLoginTest@1d296da]" name="verifyLockedOutUserLogin" class="com.swaglabs.login.LockedOutUserLoginTest"/>
-      </group> <!-- NT -->
+      <group name="ST">
+        <method signature="CheckoutInformationTest.verifyCheckoutInformationPage()[pri:1, instance:com.swaglabs.Checkout.CheckoutInformationTest@233795b6]" name="verifyCheckoutInformationPage" class="com.swaglabs.Checkout.CheckoutInformationTest"/>
+        <method signature="AddToCartTest.verifyProductsAndAddToCart()[pri:1, instance:com.swaglabs.Product.AddToCartTest@1e800aaa]" name="verifyProductsAndAddToCart" class="com.swaglabs.Product.AddToCartTest"/>
+        <method signature="ProductToCheckoutFlowTest.verifyCheckoutOverview()[pri:1, instance:com.swaglabs.Product.ProductToCheckoutFlowTest@9d5509a]" name="verifyCheckoutOverview" class="com.swaglabs.Product.ProductToCheckoutFlowTest"/>
+        <method signature="ValidLoginTest.verifyLoginpageAndValidLogin()[pri:1, instance:com.swaglabs.login.ValidLoginTest@3eb738bb]" name="verifyLoginpageAndValidLogin" class="com.swaglabs.login.ValidLoginTest"/>
+      </group> <!-- ST -->
+      <group name="YT">
+        <method signature="CheckoutInformationTest.verifyCheckoutInformationPage()[pri:1, instance:com.swaglabs.Checkout.CheckoutInformationTest@233795b6]" name="verifyCheckoutInformationPage" class="com.swaglabs.Checkout.CheckoutInformationTest"/>
+        <method signature="AddToCartTest.verifyProductsAndAddToCart()[pri:1, instance:com.swaglabs.Product.AddToCartTest@1e800aaa]" name="verifyProductsAndAddToCart" class="com.swaglabs.Product.AddToCartTest"/>
+        <method signature="ProductToCheckoutFlowTest.verifyCheckoutOverview()[pri:1, instance:com.swaglabs.Product.ProductToCheckoutFlowTest@9d5509a]" name="verifyCheckoutOverview" class="com.swaglabs.Product.ProductToCheckoutFlowTest"/>
+        <method signature="ValidLoginTest.verifyLoginpageAndValidLogin()[pri:1, instance:com.swaglabs.login.ValidLoginTest@3eb738bb]" name="verifyLoginpageAndValidLogin" class="com.swaglabs.login.ValidLoginTest"/>
+      </group> <!-- YT -->
+      <group name="IT">
+        <method signature="CheckoutInformationTest.verifyCheckoutInformationPage()[pri:1, instance:com.swaglabs.Checkout.CheckoutInformationTest@233795b6]" name="verifyCheckoutInformationPage" class="com.swaglabs.Checkout.CheckoutInformationTest"/>
+        <method signature="AddToCartTest.verifyProductsAndAddToCart()[pri:1, instance:com.swaglabs.Product.AddToCartTest@1e800aaa]" name="verifyProductsAndAddToCart" class="com.swaglabs.Product.AddToCartTest"/>
+        <method signature="ProductToCheckoutFlowTest.verifyCheckoutOverview()[pri:1, instance:com.swaglabs.Product.ProductToCheckoutFlowTest@9d5509a]" name="verifyCheckoutOverview" class="com.swaglabs.Product.ProductToCheckoutFlowTest"/>
+        <method signature="ValidLoginTest.verifyLoginpageAndValidLogin()[pri:1, instance:com.swaglabs.login.ValidLoginTest@3eb738bb]" name="verifyLoginpageAndValidLogin" class="com.swaglabs.login.ValidLoginTest"/>
+      </group> <!-- IT -->
       <group name="FT">
-        <method signature="InvalidLoginTest.verifyInvalidLogin()[pri:1, instance:com.swaglabs.login.InvalidLoginTest@3eb738bb]" name="verifyInvalidLogin" class="com.swaglabs.login.InvalidLoginTest"/>
-        <method signature="LockedOutUserLoginTest.verifyLockedOutUserLogin()[pri:2, instance:com.swaglabs.login.LockedOutUserLoginTest@1d296da]" name="verifyLockedOutUserLogin" class="com.swaglabs.login.LockedOutUserLoginTest"/>
+        <method signature="CheckoutInformationTest.verifyCheckoutInformationPage()[pri:1, instance:com.swaglabs.Checkout.CheckoutInformationTest@233795b6]" name="verifyCheckoutInformationPage" class="com.swaglabs.Checkout.CheckoutInformationTest"/>
+        <method signature="AddToCartTest.verifyProductsAndAddToCart()[pri:1, instance:com.swaglabs.Product.AddToCartTest@1e800aaa]" name="verifyProductsAndAddToCart" class="com.swaglabs.Product.AddToCartTest"/>
+        <method signature="ProductToCheckoutFlowTest.verifyCheckoutOverview()[pri:1, instance:com.swaglabs.Product.ProductToCheckoutFlowTest@9d5509a]" name="verifyCheckoutOverview" class="com.swaglabs.Product.ProductToCheckoutFlowTest"/>
+        <method signature="ValidLoginTest.verifyLoginpageAndValidLogin()[pri:1, instance:com.swaglabs.login.ValidLoginTest@3eb738bb]" name="verifyLoginpageAndValidLogin" class="com.swaglabs.login.ValidLoginTest"/>
       </group> <!-- FT -->
     </groups>
-    <test started-at="2026-10-09T14:52:15 IST" name="Test" finished-at="2026-10-09T14:52:27 IST" duration-ms="11761">
-      <class name="com.swaglabs.login.LockedOutUserLoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.swaglabs.login.LockedOutUserLoginTest@1d296da]" started-at="2026-10-09T14:52:15 IST" name="setUp" finished-at="2026-10-09T14:52:17 IST" duration-ms="2312" status="PASS">
+    <test started-at="2026-10-10T12:48:38 IST" name="Test" finished-at="2026-10-10T12:49:05 IST" duration-ms="27470">
+      <class name="com.swaglabs.login.ValidLoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.swaglabs.login.ValidLoginTest@3eb738bb]" started-at="2026-10-10T12:48:49 IST" name="setUp" finished-at="2026-10-10T12:48:50 IST" duration-ms="1560" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,24 +42,24 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLockedOutUserLogin()[pri:2, instance:com.swaglabs.login.LockedOutUserLoginTest@1d296da]" started-at="2026-10-09T14:52:17 IST" name="verifyLockedOutUserLogin" finished-at="2026-10-09T14:52:18 IST" duration-ms="353" status="PASS">
+        <test-method signature="verifyLoginpageAndValidLogin()[pri:1, instance:com.swaglabs.login.ValidLoginTest@3eb738bb]" started-at="2026-10-10T12:48:50 IST" name="verifyLoginpageAndValidLogin" finished-at="2026-10-10T12:48:51 IST" duration-ms="515" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLockedOutUserLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swaglabs.login.LockedOutUserLoginTest@1d296da]" started-at="2026-10-09T14:52:18 IST" name="tearDown" finished-at="2026-10-09T14:52:21 IST" duration-ms="3352" status="PASS">
+        </test-method> <!-- verifyLoginpageAndValidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swaglabs.login.ValidLoginTest@3eb738bb]" started-at="2026-10-10T12:48:51 IST" name="tearDown" finished-at="2026-10-10T12:48:54 IST" duration-ms="3273" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLockedOutUserLogin status=SUCCESS method=LockedOutUserLoginTest.verifyLockedOutUserLogin()[pri:2, instance:com.swaglabs.login.LockedOutUserLoginTest@1d296da] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginpageAndValidLogin status=SUCCESS method=ValidLoginTest.verifyLoginpageAndValidLogin()[pri:1, instance:com.swaglabs.login.ValidLoginTest@3eb738bb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.swaglabs.login.LockedOutUserLoginTest -->
-      <class name="com.swaglabs.login.InvalidLoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.swaglabs.login.InvalidLoginTest@3eb738bb]" started-at="2026-10-09T14:52:21 IST" name="setUp" finished-at="2026-10-09T14:52:23 IST" duration-ms="1549" status="PASS">
+      </class> <!-- com.swaglabs.login.ValidLoginTest -->
+      <class name="com.swaglabs.Product.AddToCartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.swaglabs.Product.AddToCartTest@1e800aaa]" started-at="2026-10-10T12:48:54 IST" name="setUp" finished-at="2026-10-10T12:48:56 IST" duration-ms="1763" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,22 +70,78 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyInvalidLogin()[pri:1, instance:com.swaglabs.login.InvalidLoginTest@3eb738bb]" started-at="2026-10-09T14:52:23 IST" name="verifyInvalidLogin" finished-at="2026-10-09T14:52:23 IST" duration-ms="872" status="PASS">
+        <test-method signature="verifyProductsAndAddToCart()[pri:1, instance:com.swaglabs.Product.AddToCartTest@1e800aaa]" started-at="2026-10-10T12:48:56 IST" name="verifyProductsAndAddToCart" finished-at="2026-10-10T12:48:56 IST" duration-ms="365" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyInvalidLogin -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swaglabs.login.InvalidLoginTest@3eb738bb]" started-at="2026-10-09T14:52:23 IST" name="tearDown" finished-at="2026-10-09T14:52:27 IST" duration-ms="3280" status="PASS">
+        </test-method> <!-- verifyProductsAndAddToCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swaglabs.Product.AddToCartTest@1e800aaa]" started-at="2026-10-10T12:48:56 IST" name="tearDown" finished-at="2026-10-10T12:48:59 IST" duration-ms="3245" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyInvalidLogin status=SUCCESS method=InvalidLoginTest.verifyInvalidLogin()[pri:1, instance:com.swaglabs.login.InvalidLoginTest@3eb738bb] output={null}]]]>
+                <![CDATA[[TestResult name=verifyProductsAndAddToCart status=SUCCESS method=AddToCartTest.verifyProductsAndAddToCart()[pri:1, instance:com.swaglabs.Product.AddToCartTest@1e800aaa] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.swaglabs.login.InvalidLoginTest -->
+      </class> <!-- com.swaglabs.Product.AddToCartTest -->
+      <class name="com.swaglabs.Checkout.CheckoutInformationTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.swaglabs.Checkout.CheckoutInformationTest@233795b6]" started-at="2026-10-10T12:48:38 IST" name="setUp" finished-at="2026-10-10T12:48:44 IST" duration-ms="6526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCheckoutInformationPage()[pri:1, instance:com.swaglabs.Checkout.CheckoutInformationTest@233795b6]" started-at="2026-10-10T12:48:44 IST" name="verifyCheckoutInformationPage" finished-at="2026-10-10T12:48:45 IST" duration-ms="1241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutInformationPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swaglabs.Checkout.CheckoutInformationTest@233795b6]" started-at="2026-10-10T12:48:45 IST" name="tearDown" finished-at="2026-10-10T12:48:49 IST" duration-ms="3287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCheckoutInformationPage status=SUCCESS method=CheckoutInformationTest.verifyCheckoutInformationPage()[pri:1, instance:com.swaglabs.Checkout.CheckoutInformationTest@233795b6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.swaglabs.Checkout.CheckoutInformationTest -->
+      <class name="com.swaglabs.Product.ProductToCheckoutFlowTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.swaglabs.Product.ProductToCheckoutFlowTest@9d5509a]" started-at="2026-10-10T12:48:59 IST" name="setUp" finished-at="2026-10-10T12:49:01 IST" duration-ms="1575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyCheckoutOverview()[pri:1, instance:com.swaglabs.Product.ProductToCheckoutFlowTest@9d5509a]" started-at="2026-10-10T12:49:01 IST" name="verifyCheckoutOverview" finished-at="2026-10-10T12:49:02 IST" duration-ms="726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutOverview -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swaglabs.Product.ProductToCheckoutFlowTest@9d5509a]" started-at="2026-10-10T12:49:02 IST" name="tearDown" finished-at="2026-10-10T12:49:05 IST" duration-ms="3350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCheckoutOverview status=SUCCESS method=ProductToCheckoutFlowTest.verifyCheckoutOverview()[pri:1, instance:com.swaglabs.Product.ProductToCheckoutFlowTest@9d5509a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.swaglabs.Product.ProductToCheckoutFlowTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
