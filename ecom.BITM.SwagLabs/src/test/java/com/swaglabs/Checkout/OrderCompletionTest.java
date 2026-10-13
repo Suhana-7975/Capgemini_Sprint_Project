@@ -1,5 +1,11 @@
 package com.swaglabs.Checkout;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -7,13 +13,12 @@ import com.swaglabs.baseClass.BaseClass;
 import com.swaglabs.objRepo.CartPage;
 import com.swaglabs.objRepo.CheckoutPage1;
 import com.swaglabs.objRepo.CheckoutPage2;
-import com.swaglabs.objRepo.CheckoutPage3;
 import com.swaglabs.objRepo.Loginpage;
 import com.swaglabs.objRepo.ProductPage;
 
 public class OrderCompletionTest extends BaseClass {
 
-    @Test(priority = 1, groups = { "FT", "IT"})
+    @Test(priority = 1, groups = { "FT", "IT" })
     public void verifyOrderCompletion() {
 
         Loginpage loginPage = new Loginpage(driver);
@@ -38,6 +43,10 @@ public class OrderCompletionTest extends BaseClass {
         checkoutPage1.enterPostalCode("583101");
         checkoutPage1.clickContinue();
 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        wait.until(ExpectedConditions.urlContains("checkout-step-two"));
+
         CheckoutPage2 checkoutPage2 = new CheckoutPage2(driver);
 
         Assert.assertTrue(
@@ -47,26 +56,32 @@ public class OrderCompletionTest extends BaseClass {
 
         checkoutPage2.clickFinish();
 
-        CheckoutPage3 checkoutPage3 = new CheckoutPage3(driver);
+        wait.until(ExpectedConditions.urlContains("checkout-complete"));
+
+        WebElement completeTitle = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-test='title']")));
 
         Assert.assertTrue(
-                checkoutPage3.getCompleteTitle().isDisplayed(),
+                completeTitle.isDisplayed(),
                 "Checkout Complete page is not displayed"
         );
 
         Assert.assertEquals(
-                checkoutPage3.getCompleteTitle().getText(),
+                completeTitle.getText(),
                 "Checkout: Complete!",
                 "Incorrect completion page"
         );
 
+        WebElement confirmation = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[data-test='complete-header']")));
+
         Assert.assertTrue(
-                checkoutPage3.getConfirmationMessage().isDisplayed(),
+                confirmation.isDisplayed(),
                 "Confirmation message is not displayed"
         );
 
         Assert.assertEquals(
-                checkoutPage3.getConfirmationMessage().getText(),
+                confirmation.getText(),
                 "Thank you for your order!",
                 "Order confirmation message is incorrect"
         );
